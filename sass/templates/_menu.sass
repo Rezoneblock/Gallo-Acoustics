@@ -1,0 +1,25 @@
+.menu
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__list
+    display: flex
+    list-style: none
+    flex-direction: column
+    &__item
+      padding: 10px 0
+      display: flex
+      color: $blue
+      font-size: 20px
+      letter-spacing: 2px
+      text-transform: uppercase
+      text-decoration: none
+      &--active
+        color: $dark
+  &__link
+    text-decoration: none
+    color: inherit
+  &__image-block
+    max-width: 600px
+    max-height: 600px
