@@ -63,14 +63,32 @@ img {
   list-style: none;
 }
 
+.main-swiper__link {
+  text-decoration: none;
+}
+
 .main-swiper__list {
   padding-bottom: 60px;
 }
 
 .main-swiper__list__item {
   overflow: hidden;
-  cursor: pointer;
   width: 100%;
+}
+
+.main-swiper__footer {
+  min-height: 60px;
+  padding: 0 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1d9cd8;
+}
+
+.main-swiper__image {
+  min-height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main-swiper__content {
@@ -94,38 +112,30 @@ img {
   position: relative;
 }
 
-.main-swiper__content__item:first-of-type {
-  height: 100%;
-}
-
-.main-swiper__content__item:last-of-type {
-  min-height: 60px;
-  padding: 0 60px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #1d9cd8;
-}
-
 .main-swiper__text {
-  max-width: 500px;
+  font-family: 'Gilroy-Regular', sans-serif;
+  max-width: 520px;
   padding: 20px 60px;
   position: absolute;
-  left: 0;
   bottom: 0;
   font-size: 60px;
   letter-spacing: 2px;
+  text-transform: uppercase;
   color: #ffffff;
+}
+
+.main-swiper__text--right {
+  left: 60%;
 }
 
 .main-swiper__text--primary {
   font-size: 190px;
+  font-weight: bold;
 }
 
 .main-swiper__title {
   padding: 20px 60px;
   position: absolute;
-  left: 0;
   bottom: 0;
   text-transform: uppercase;
   font-size: 40px;
@@ -171,5 +181,57 @@ img {
 
 .main-swiper__pagination .swiper-pagination-bullet-active {
   background-color: #000000;
+}
+
+@media screen and (max-width: 1280px) {
+  .section {
+    padding-top: 0;
+  }
+  .container {
+    width: 95%;
+  }
+  .main-swiper__text {
+    max-width: 300px;
+    font-size: 24px;
+    padding: 0px 20px;
+  }
+  .main-swiper__text--primary {
+    font-size: 132px;
+  }
+  .main-swiper__pagination {
+    bottom: 16px !important;
+  }
+  .main-swiper__title {
+    padding: 15px 20px;
+    font-size: 24px;
+  }
+  .main-swiper__footer {
+    padding: 0 20px;
+  }
+  .main-swiper__product-name {
+    font-size: 14px;
+  }
+  .main-swiper__product-description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .main-swiper__pagination .swiper-pagination-bullet {
+    margin: 0 4px !important;
+  }
+  .main-swiper__footer {
+    padding: 0 10px;
+  }
+  .main-swiper__title {
+    padding: 15px 10px;
+  }
+  .main-swiper__text {
+    padding: 15px 10px;
+    font-size: 30px;
+  }
+  .main-swiper__text--primary {
+    font-size: 98px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
