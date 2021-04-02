@@ -5,9 +5,9 @@ const mainFirstSwiper = new Swiper('.main-swiper', {
     el: '.main-swiper__pagination',
     clickable: true,
   },
-  // autoplay: {
-  // disableOnInteraction: false,
-  // },
+  autoplay: {
+    disableOnInteraction: false,
+  },
 });
 
 $('.menu__list__item').each(function () {

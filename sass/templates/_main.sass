@@ -7,17 +7,24 @@
       &__item
         overflow: hidden
         width: 100%
+        transition: .5s
     &__footer
       min-height: 60px
       padding: 0 60px
       justify-content: center
       background-color: $blue
+      transition: background .5s
     &__image
       min-height: 340px
       object-fit: cover
+      transition: transform .5s
     &__content
       display: flex
       flex-direction: column
+      &:hover > .main-swiper__footer
+        background-color: #4ab0e0
+      &:hover > .main-swiper__content__item .main-swiper__image
+        transform: scale(1.02)
       &__item
         display: flex
         flex-direction: column
@@ -70,5 +77,8 @@
         background-color: $blue
         border-radius: 50%
         opacity: 1
+        transition: opacity .5s
         &-active
           background-color: $dark
+        &:hover
+          opacity: .6
